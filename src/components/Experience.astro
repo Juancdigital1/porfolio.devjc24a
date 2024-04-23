@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Creador de Aplicaciones web y mobiles",
+    company: "Apps unicas 2023-2024",
+    description:
+      "Manipulacion sobre programación y desarrollo de herramientas web en diferentes plataformas, juegos. HTML, CSS3, js, react 2023 por GitHub.",
+    link: "https://github.com/Juancdigital1/app2-juegotriquiene24a",
+  },
+  {
+    date: "Octubre 2023",
+    title: "Desarrollador Frontend Responsive desing",
+    company: "Horizontes App",
+    description:
+      "Responsable de hacer modificaciones en  la plataforma, componentes y utilidades para la creación y desarrollo de varias aplicaciones web. Implantación de medidas de integración continua y despliegue testing en diferentes equipos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
